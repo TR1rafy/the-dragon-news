@@ -7,7 +7,6 @@ const Category = () => {
   const { id } = useParams();
   return (
     <div>
-      <h4>This is a category:{categoryNews.length}</h4>
       {categoryNews.map((news) => (
         <NewsCard key={news._id} news={news}></NewsCard>
       ))}
